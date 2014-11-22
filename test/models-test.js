@@ -1,5 +1,5 @@
 var assert = require('chai').assert;
-var EmberMigrator = require('../lib/ember-migrator');
+var EmberMigrator = require('../lib/ember-migrator-lib');
 var path = require('path');
 var fs = require('fs');
 var rimraf = require('rimraf');
