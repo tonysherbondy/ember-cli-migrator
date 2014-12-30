@@ -263,4 +263,13 @@ describe('migrating models', function(){
     });
   });
 
+  describe('Moves window var definition into globals directory', function(){
+
+    it('migrates the files correctly', function(){
+      var expectedModel = fixture('globals/window-var.js').split('\n');
+      var actualModel  = result('globals/window-var.js').split('\n');
+      assert.deepEqual(actualModel, expectedModel);
+    });
+  });
+
 });
