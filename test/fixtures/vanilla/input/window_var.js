@@ -1,3 +1,3 @@
-window.global_analytics = function() {
-  console.log('analytics');
+window.vip_global = function() {
+  console.log('the coolest');
 };

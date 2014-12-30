@@ -272,4 +272,12 @@ describe('migrating models', function(){
     });
   });
 
+  describe('Moves self executing anonymous functions to globals', function(){
+
+    it('migrates the files correctly', function(){
+      var expectedModel = fixture('globals/analytics/global-analytics.js').split('\n');
+      var actualModel  = result('globals/analytics/global-analytics.js').split('\n');
+      assert.deepEqual(actualModel, expectedModel);
+    });
+  });
 });
